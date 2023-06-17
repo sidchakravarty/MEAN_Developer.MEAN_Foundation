@@ -23,7 +23,7 @@ These are instructions to use GitHub from the Command Line
  - git checkout "sid' (This will switch to the existing branch called 'sid') 
  - git status
  - git branch
- - git push --set-upstream origin sid
+ - git push --set-upstream origin sid (This will push any new additions or changes from the origin folder to the GitHub branch 'sid')
 
  5. Clone Repository (Navigate to the folder where you want to clone the repository and then type the following code)
   - git clone https://github.com/sidchakravarty/MEAN_Foundation.git
