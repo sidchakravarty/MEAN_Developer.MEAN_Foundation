@@ -1,3 +1,5 @@
+These are instructions to use GitHub from the Command Line
+
 1. Configure Git
  - git config --global user.email "sidchakravarty@gmail.com"
  - git config --global user.name "sidchakravarty"
