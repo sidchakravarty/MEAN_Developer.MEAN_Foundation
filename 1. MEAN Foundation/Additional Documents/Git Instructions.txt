@@ -1,0 +1,17 @@
+1. Configure Git
+ - git config --global user.email "sidchakravarty@gmail.com"
+ - git config --global user.name "sidchakravarty"
+
+2. Initialize Git and Push
+ - git init
+ - git add .
+ - git commit -m "first commit"
+ - git branch -M main
+ - git remote add origin https://github.com/sidchakravarty/MEAN_Foundation.git
+ - git push -u origin main
+
+3. Subsequent GIT Push
+ - git init
+ - git add .
+ - git commit -m "first commit"
+ - git push -u origin main
