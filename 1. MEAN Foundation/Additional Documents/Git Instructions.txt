@@ -18,4 +18,7 @@ These are instructions to use GitHub from the Command Line
  - git commit -m "first commit"
  - git push -u origin main
 
- 4. Git Create Branch
+ 4. Create Branch
+
+ 5. Clone Repository (Navigate to the folder where you want to clone the repository and then type the following code)
+  - git clone https://github.com/sidchakravarty/MEAN_Foundation.git
