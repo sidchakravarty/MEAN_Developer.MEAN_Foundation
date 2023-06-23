@@ -9,8 +9,26 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!--For making buttons with icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        /* Style buttons */
+        #cloud_btn {
+        background-color: DodgerBlue; /* Blue background */
+        border: none; /* Remove borders */
+        color: white; /* White text */
+        padding: 6px 16px; /* Some padding */
+        font-size: 16px; /* Set a font size */
+        cursor: pointer; /* Mouse pointer on hover */
+        }
 
+        /* Darker background on mouse-over */
+        #cloud_btn:hover {
+        background-color: DodgerBlue;
+        color: yellow;
+        }
+    </style>
 </head>
 <body>
 
@@ -71,6 +89,81 @@
         </div>                
 
     </div>    
+    <br>
+    <div style="width: 25%">
+
+        <div>
+            <p class="text-primary col-md-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p> 
+            <p class="text-success col-md-6">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p> 
+        </div>       
+        <br><br> 
+        <div>
+            <form>
+                <h1>Login</h1>
+                <div>
+                    <label for="exampleInputUName1">User Name</label>            
+                    <input class="form-control" type="text" placeholder="Default input" id="exampleInputUName1"><br>
+                </div>
+                
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                <input type="submit" value="Submit" class="btn btn-success">
+                <input type="reset" value="Clear" class="btn btn-danger">            
+                <br><br>
+            </form>
+        </div>
+        <div>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr><th>ID</th><th>Name</th><th>Age</th><th>Gender</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Sid Chakravarty</td><td>43</td><td>Male</td></tr>
+                    <tr><td>2</td><td>Piya Chakravarty</td><td>40</td><td>Female</td></tr>
+                    <tr><td>3</td><td>Aarohee Chakravarty</td><td>9</td><td>Female</td></tr>                
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <button class="btn" id="cloud_btn"><i class="fa fa-cloud" id="cloud_btn"></i>Upload</button>
+        </div>
+        <div>
+            <span class="glyphicon glyphicon-calendar"></span>
+            <span class="glyphicon glyphicon-music"></span>
+            <span class="glyphicon glyphicon-glass"></span>                        
+        </div>
+        <div>
+            <ul class="pagination">
+                <li><a href="">1</a></li>
+                <li class="active"><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href="">6</a></li>
+                <li class="disabled"><a href="">7</a></li>
+            </ul>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" style="width:80%;">
+                80%
+            </div>         
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped active" style="width:70%;">
+                70%
+            </div>   
+        </div>
+
+    </div>
 
 </body>
 </html>
