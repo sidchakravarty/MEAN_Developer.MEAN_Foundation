@@ -1,0 +1,43 @@
+
+body{
+    background-color: rgb(117, 233, 167);
+    background-image: url("../Images/Generative\ AI\ -\ Auditorium.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    color: brown;
+}
+
+/* Use . to refer to a class and # to refer to an ID*/
+
+#special_id{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px 2px;
+}
+
+.first{
+    color: red;
+    font-style: italic;
+}
+
+.second{
+    color: yellowgreen;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.myclass{
+    width: 50%;
+    background-color: orange;
+    opacity: 70%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+    padding: 10px; /*It will give the padding inside the div or the text box*/
+    margin-top: 5px;
+    line-height: 150%;
+    height: 100px;
+    overflow: scroll; /*This will control how the text inside the box will be shown - scroll, hidden, visible, etc.*/
+}

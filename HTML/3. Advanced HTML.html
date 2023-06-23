@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: url('D:\MEAN Projects\1. MEAN Foundation\Images\Google Data Engineer.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        a{
+            color: red; /*This will make sure that all links are in green color*/
+            text-decoration: none; /*Links will not have an underline*/
+        }
+        a:hover{
+            color: blue; /*This will make sure that when the mouse hovers over the links, the color is changed to the blue color*/
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body bgcolor="white">
+    <h1>This is an advanced HTML Training File</h1>
+    <h2>How to use div tags</h2>
+
+    <p>
+        A <b>div</b> tag is used to carve out the entire width (block) of the screen and the length of the tag
+        that it has been applied to. However, the <b>span</b> tag will only have the width of the text
+    </p>
+
+    <div>Hello World</div>
+    <div style="background-color: yellowgreen;">Hello World</div>
+    <span style="background-color: cyan;">Hello World</span>
+    <div style = "color: brown;">Hello World</div>
+
+    <img src = "D:\MEAN Projects\1. MEAN Foundation\Images\AWS-SolArchitect-Professional-2020.png">
+    <img src = "D:\MEAN Projects\1. MEAN Foundation\Images\azure-solutions-architect-expert.png">
+    <img src = "D:\MEAN Projects\1. MEAN Foundation\Images\Test.png" alt = "Loading ...">
+
+    <div>To link directly to an image that is available in the internet, paste the <b>image address</b></div>
+    <img src = "D:\MEAN Projects\1. MEAN Foundation\Images\azure-solutions-architect-expert.png">
+    <br><br>
+    Insert a URL Link <br><br>
+    This will open in the page<br>
+    <a href="https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-cloud-computing">What is Cloud Computing</a>
+    <br><br>
+    This will open in another page<br>
+    <a href="https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-cloud-computing" target="_blank">What is Cloud Computing</a><br><br>
+    This is a clickable image
+    <a href="https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-cloud-computing" target="_blank">
+        <img src = "D:\MEAN Projects\1. MEAN Foundation\Images\azure-solutions-architect-expert.png" width = "10%"></a>
+    
+    <div style = "text-align: center;">
+        <h1>Upload Video / Audio</h1>
+        <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=1">Bohemian Rhapsody
+        </iframe>
+    </div>
+
+    <div style = "text-align: center;">
+        <h1>Form Demo</h1>
+        <form>
+            Name: <input type = "text"><br>
+            Password: <input type = "password"><br>
+            Email: <input type = "email"><br>
+            Age: <input type = "number" minlength = "1" maxlength="3"><br>
+            Phone: <select>
+                <option>+1</option>
+                <option>+91</option>
+            </select>
+            <input type = "number"><br>
+            Gender: 
+                <input type = "radio" name = 'gender'>Male
+                <input type = "radio" name = 'gender'>Female
+            <br>
+            Date of Birth:
+                <!-- <select>
+                    <option>Day</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <select>
+                    <option>Month</option>
+                    <option>Jan</option>
+                    <option>Feb</option>
+                    <option>Mar</option>
+                </select>
+                <select>
+                    <option>Year</option>
+                    <option>1979</option>
+                    <option>1980</option>
+                    <option>1981</option>
+                </select>     -->
+                <input type = "date">
+                <br>
+                Address: <textarea rows="3" cols="10"></textarea><br>
+                Qualification:
+                <select>
+                    <option>MS</option>
+                    <option>BS</option>
+                    <option>MBA</option>
+                </select>
+                Specialization: 
+                    <input type = "checkbox">Java
+                    <input type = "checkbox">C++
+                    <input type = "checkbox">Python
+            <br><br>
+            <input type = "submit" 
+                   value = "Log In"
+                   style = "background-color: green;
+                            height: 40px;
+                            width: 100px;
+                            color: white;
+                            border-radius: 10px;">
+            <input type = "submit" 
+                   value = "New Cutomer"
+                   style = "background-color: rgb(32, 4, 65);
+                   height: 40px;
+                   width: 100px;
+                   color: white;
+                   border-radius: 10px;">
+            <input type = "reset" 
+                   value = "Reset"
+                   style = "background-color: rgb(128, 0, 0);
+                   height: 40px;
+                   width: 100px;
+                   color: white;
+                   border-radius: 10px;">
+            <br><br>
+            Min: <input type = "range">: Max <br>
+            Color: <input type = "color"><br>
+            Resume: <input type = "file"><br><br>
+        </form>
+    </div>
+
+    </body>
+</html>

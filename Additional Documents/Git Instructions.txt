@@ -1,0 +1,35 @@
+These are instructions to use GitHub from the Command Line
+
+1. Configure Git
+ - git config --global user.email "sidchakravarty@gmail.com"
+ - git config --global user.name "sidchakravarty"
+
+2. Initialize Git and Push (Navigate to the folder where you want to initialize the new repository)
+ - git init
+ - git add .
+ - git commit -m "first commit"
+ - git branch -M main (main is the name of the branch that will be created on GitHub)
+ - git remote add origin https://github.com/sidchakravarty/MEAN_Foundation.git
+ - git push -u origin main
+
+3. Subsequent GIT Push
+ - git init
+ - git add .
+ - git commit -m "first commit"
+ - git push -u origin main
+
+ 4. Create Branch
+ - git checkout -b "sid" (This will create a new branch 'sid' and switch to it)
+ - git checkout "sid' (This will switch to the existing branch called 'sid') 
+ - git status
+ - git branch
+ - git push --set-upstream origin sid (This will push any new additions or changes from the origin folder to the GitHub branch 'sid')
+
+ 5. Merge Changes to main
+ - git checkout main (Do this step while on the branch, e.g., 'sid')
+ - git pull origin main
+ - git merge sid
+ - git push origin main
+
+ 6. Clone Repository (Navigate to the folder where you want to clone the repository and then type the following code)
+  - git clone https://github.com/sidchakravarty/MEAN_Foundation.git

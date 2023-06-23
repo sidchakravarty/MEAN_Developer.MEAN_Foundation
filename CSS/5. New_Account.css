@@ -1,0 +1,34 @@
+.new_account_class{
+    /*COLORS*/
+    background-color: orange;
+    color: black;
+
+    /*LOCATION*/
+    height: 600px;
+    width: 49%;
+    float: left;
+    padding: 5px 5px;
+
+    /*TEXT DECORATIONS*/
+    text-align: center;
+}
+
+.existing_account_class{
+    /*COLORS*/
+    background-color: palegreen;
+    color: black;
+
+    /*LOCATION*/
+    height: 600px;
+    width: 49%;
+    float: right;
+    padding: 5px 5px;
+
+    /*TEXT DECORATIONS*/
+    text-align: center;
+}
+
+.form_controls{
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
