@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to JavaScript</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--For making buttons with icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        /*
+        function hello_world_prompt(){
+
+            for (let index = 0; index < 10; index++) {
+                document.write("<h1>Hello World!</h1>");            
+            }
+        }
+        */
+
+
+        /**
+         * This code takes in the values provided by txtFirstName and txtLastName 
+         * and then concatenates to create var_fullname, which is then passed into
+         * the txtFullName control and the alert control.
+         */
+        function login_user(){
+            var_fname = document.frmCustomerLogin.txtFirstName.value;
+            var_lname = document.frmCustomerLogin.txtLastName.value;
+            alert("Full Name: " + var_fname + " " + var_lname);
+            var_fullname = var_fname + " " + var_lname;
+            document.frmCustomerLogin.txtFullName.value = var_fullname;
+        }
+
+        function simple_math(){
+            var_first_value = parseInt(document.frmMath.txtValue1.value);
+            var_second_value = parseInt(document.frmMath.txtValue2.value);
+            document.frmMath.txtResult.value = var_first_value + var_second_value;
+        }
+
+    </script>
+
+
+</head>
+<body>
+    <!--
+    <input type="submit" onclick="hello_world_prompt()">
+    -->
+
+    <div class="col-md-4" style="text-align: left;">
+        <h1>Customer Login</h1>
+        <form name = "frmCustomerLogin">
+            <div>
+                <label for="txtFirstName">First Name</label>            
+                <input type="text" class="form-control" placeholder="First Name" id="txtFirstName" name="txtFirstName"><br>
+            </div>
+
+            <div>
+                <label for="txtLastName">Last Name</label>
+                <input type="text" class="form-control" placeholder="Last Name" id="txtLastName" name="txtLastName">
+            </div>
+
+            <br>
+            <!--type = SUBMIT once executed will go to the next page. If we want to remain on the same page, use type = BUTTON-->
+            <!--<input type="submit" value="Submit" class="btn btn-success" onclick="login_user()">-->
+            <input type="button" value="Submit" class="btn btn-success" onclick="login_user()">
+
+            <br><br>
+            <div>
+                <label for="txtFullName">Full Name</label>
+                <input type="text" class="form-control" placeholder="Full Name" id="txtFullName" name="txtFullName">
+            </div>
+        </form>
+
+        <h1>Simple Math</h1>
+        <form name = "frmMath">
+            <div>
+                <label for="txtValue1">First Value</label>            
+                <input type="text" class="form-control" placeholder="First Value" id="txtValue1" name="txtValue1"><br>
+            </div>
+
+            <div>
+                <label for="txtValue2">Second Value</label>
+                <input type="text" class="form-control" placeholder="Second Value" id="txtValue2" name="txtValue2">
+            </div>
+
+            <br>
+            <!--type = SUBMIT once executed will go to the next page. If we want to remain on the same page, use type = BUTTON-->
+            <!--<input type="submit" value="Submit" class="btn btn-success" onclick="login_user()">-->
+            <input type="button" value="Submit" class="btn btn-success" onclick="simple_math()">
+
+            <br><br>
+            <div>
+                <label for="txtResult">Math Result</label>
+                <input type="text" class="form-control" placeholder="Math Result" id="txtResult" name="txtResult">
+            </div>
+        </form>        
+    </div>
+
+
+</body>
+</html>
