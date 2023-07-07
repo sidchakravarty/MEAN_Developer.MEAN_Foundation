@@ -1,0 +1,28 @@
+
+/* CSS for Calculator.html */
+*{margin: auto;}
+
+.container{text-align: center;}
+
+input{
+    font-size: 30px;
+    border: 2px solid rgb(8, 8, 8);
+    width: 240px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button{
+    width: 60px;
+    height: 50px;
+    background-color: lightgray;
+    margin: 100px;
+}
+
+.calculator{
+    background-color: lightcoral;
+    display: inline-block;
+    margin: 100px;
+    padding: 10px;
+    border-radius: 20px;
+}

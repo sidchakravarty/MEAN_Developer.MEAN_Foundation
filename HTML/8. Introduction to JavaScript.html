@@ -34,9 +34,20 @@
         }
 
         function simple_math(){
+            math_operation = document.getElementById('math_operations').value;
             var_first_value = parseInt(document.frmMath.txtValue1.value);
             var_second_value = parseInt(document.frmMath.txtValue2.value);
-            document.frmMath.txtResult.value = var_first_value + var_second_value;
+            
+            if (math_operation == 'add') {
+                result = var_first_value + var_second_value;
+            } else if (math_operation == 'sub') {
+                result = var_first_value - var_second_value;
+            } else if (math_operation == 'mul') {
+                result = var_first_value * var_second_value;
+            } else if (math_operation == 'div') {
+                result = var_first_value / var_second_value;
+            }
+            document.frmMath.txtResult.value = result;
         }
 
     </script>
@@ -88,6 +99,13 @@
             <br>
             <!--type = SUBMIT once executed will go to the next page. If we want to remain on the same page, use type = BUTTON-->
             <!--<input type="submit" value="Submit" class="btn btn-success" onclick="login_user()">-->
+            <label for="math_operations">Selection Math Operation:</label>
+                <select name="math_operations" id="math_operations">
+                    <option value="add">Add</option>
+                    <option value="sub">Subtract</option>
+                    <option value="mul">Multiply</option>
+                    <option value="div">Divide</option>
+                </select>
             <input type="button" value="Submit" class="btn btn-success" onclick="simple_math()">
 
             <br><br>
