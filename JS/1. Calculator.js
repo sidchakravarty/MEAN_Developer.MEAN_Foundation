@@ -1,12 +1,13 @@
 
-
-let display = document.getElementById(display);
+/*
+let display = document.getElementById('display');
 let displayValue = '';
 buttons = document.querySelectorAll('button')
 
 for(item of buttons){
     item.addEventListener('click', (e)=>{
         buttonText = e.target.innerText;
+        alert(buttonText)
         console.log(buttonText)
         if(buttonText == 'X') {
             buttonText="*";
@@ -22,4 +23,20 @@ for(item of buttons){
             display.value = displayValue
         }
     }) 
+}
+*/
+
+function displayValue(){
+    alert('hello world!')
+
+}
+
+function changeColor(){
+
+}
+
+function abc(){document.getElementById('display').style.backgroundColor = 'lightblue'}
+function def(){document.getElementById('display').style.backgroundColor = 'lightgreen'}
+function choose_color(value){
+    document.getElementById("my_page").style.backgroundColor = value;
 }
