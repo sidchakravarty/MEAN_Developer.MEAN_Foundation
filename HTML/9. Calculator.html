@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--For making buttons with icons-->
-        <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="../CSS/6. Calculator.css">
         
         <script src="../JS/1. Calculator.js"></script>
@@ -28,34 +27,34 @@
                 <input type="text" name="display" id = "display" onblur="abc()" onfocus="def()">
                 <table>
                     <tr>
-                        <td><button type="button" class="btn btn-secondary btn-lg" onclick="displayValue()" id="btn_(">(</button></td>
-                        <td><button type="button" class="btn btn-secondary btn-lg">)</button></td>
+                        <td><button type="button" class="btn btn-secondary btn-lg" onclick="displayValue(document.getElementById('btn_(').value)" id="btn_(" value = '('>(</button></td>
+                        <td><button type="button" class="btn btn-secondary btn-lg" onclick="displayValue(document.getElementById('btn_)').value)" id="btn_)" value = ')'>)</button></td>
                         <td><button type="button" class="btn btn-secondary btn-lg">%</button></td>
                         <td><button type="button" class="btn btn-secondary btn-lg">C</button></td>
                     </tr>
                     <tr>
-                        <td><button type="button" class="btn btn-secondary btn-lg">7</button></td>
-                        <td><button type="button" class="btn btn-secondary btn-lg">8</button></td>
-                        <td><button type="button" class="btn btn-secondary btn-lg">9</button></td>
-                        <td><button type="button" class="btn btn-secondary btn-lg">/</button></td>
+                        <td><button type="button" class="btn btn-secondary btn-lg" onclick="displayValue(document.getElementById('btn_7').value)" id="btn_7" value = '7'>7</button></td>
+                        <td><button type="button" class="btn btn-secondary btn-lg" onclick="displayValue(document.getElementById('btn_8').value)" id="btn_8" value = '8'>8</button></td>
+                        <td><button type="button" class="btn btn-secondary btn-lg" onclick="displayValue(document.getElementById('btn_9').value)" id="btn_9" value = '9'>9</button></td>
+                        <td><button type="button" class="btn btn-secondary btn-lg" onclick="displayValue(document.getElementById('btn_/').value)" id="btn_/" value = '/'>/</button></td>
                     </tr>
                     <tr>
-                        <td><button type="button" class="btn btn-secondary btn-lg">4</button></td>
-                        <td><button type="button" class="btn btn-secondary btn-lg">5</button></td>
-                        <td><button type="button" class="btn btn-secondary btn-lg">6</button></td>
-                        <td><button type="button" class="btn btn-secondary btn-lg">X</button></td>
+                        <td><button type="button" class="btn btn-secondary btn-lg" onclick="displayValue(document.getElementById('btn_4').value)" id="btn_4" value = '4'>4</button></td>
+                        <td><button type="button" class="btn btn-secondary btn-lg" onclick="displayValue(document.getElementById('btn_5').value)" id="btn_5" value = '5'>5</button></td>
+                        <td><button type="button" class="btn btn-secondary btn-lg" onclick="displayValue(document.getElementById('btn_6').value)" id="btn_6" value = '6'>6</button></td>
+                        <td><button type="button" class="btn btn-secondary btn-lg" onclick="displayValue(document.getElementById('btn_*').value)" id="btn_*" value = '*'>X</button></td>
                     </tr>
                     <tr>
-                        <td><button type="button" class="btn btn-secondary btn-lg">1</button></td>
-                        <td><button type="button" class="btn btn-secondary btn-lg">2</button></td>
-                        <td><button type="button" class="btn btn-secondary btn-lg">3</button></td>
-                        <td><button type="button" class="btn btn-secondary btn-lg">-</button></td>
+                        <td><button type="button" class="btn btn-secondary btn-lg" onclick="displayValue(document.getElementById('btn_1').value)" id="btn_1" value = '1'>1</button></td>
+                        <td><button type="button" class="btn btn-secondary btn-lg" onclick="displayValue(document.getElementById('btn_2').value)" id="btn_2" value = '2'>2</button></td>
+                        <td><button type="button" class="btn btn-secondary btn-lg" onclick="displayValue(document.getElementById('btn_3').value)" id="btn_3" value = '3'>3</button></td>
+                        <td><button type="button" class="btn btn-secondary btn-lg" onclick="displayValue(document.getElementById('btn_-').value)" id="btn_-" value = '-'>-</button></td>
                     </tr>
                     <tr>
-                        <td><button type="button" class="btn btn-secondary btn-lg">0</button></td>
-                        <td><button type="button" class="btn btn-secondary btn-lg">.</button></td>
-                        <td><button type="button" class="btn btn-secondary btn-lg">=</button></td>
-                        <td><button type="button" class="btn btn-secondary btn-lg">+</button></td>
+                        <td><button type="button" class="btn btn-secondary btn-lg" onclick="displayValue(document.getElementById('btn_0').value)" id="btn_0" value = '0'>0</button></td>
+                        <td><button type="button" class="btn btn-secondary btn-lg" onclick="displayValue(document.getElementById('btn_.').value)" id="btn_." value = '.'>.</button></td>
+                        <td><button type="button" class="btn btn-secondary btn-lg" onclick="displayValue(document.getElementById('btn_=').value)" id="btn_=" value = '='>=</button></td>
+                        <td><button type="button" class="btn btn-secondary btn-lg" onclick="displayValue(document.getElementById('btn_+').value)" id="btn_+" value = '+'>+</button></td>
                     </tr>
                 </table>
             </div>

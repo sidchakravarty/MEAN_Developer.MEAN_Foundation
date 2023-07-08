@@ -26,12 +26,17 @@ for(item of buttons){
 }
 */
 
-function displayValue(){
-    alert('hello world!')
-
-}
-
-function changeColor(){
+function displayValue(value){
+    if (document.getElementById('display').length = 0 || 
+        document.getElementById('display').length == null || 
+        document.getElementById('display').length == undefined) {
+        console.log("Nothing there");
+        document.getElementById('display').value = value;
+    } else {
+        console.log("Something is already there");
+        document.getElementById('display').value = document.getElementById('display').value + value;
+    }
+    
 
 }
 
