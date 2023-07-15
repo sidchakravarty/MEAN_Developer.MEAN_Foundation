@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Class</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--For making buttons with icons-->
+    
+    <script src="../JS/3. Class.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>      
+</head>
+<body>
+    <div>
+        <div>
+            <!-- Off Canvas -->
+            <!-- <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+                <div class = "offcanvas-header">
+                    <h5 class="offcanvas-title" id="sidebar-label">My Other books</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <p>Lorem ipsum dolor sit met consectetur</p>
+                </div>
+            </div>
+        </div> -->
+
+        <form>
+            <h1>Login</h1>
+            <div class="form-group col-md-2">
+                <div>
+                    <label for="txt_first_name">First Name</label>            
+                    <input class="form-control" type="text" placeholder="First Name" id="txt_first_name">
+                </div><br>
+                
+                <div>
+                    <label for="txt_last_name">Last Name</label>
+                    <input type="text" class="form-control" id="txt_last_name" placeholder="Last Name">
+                </div>
+                <div class="dropdown">
+                    <!-- <label for="cmb_gender">Gender</label><br> -->
+                    <button class="btn btn-secondary dropdown-toggle col-md-4 mt-3" type="button" id="cmb_gender" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Gender
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="cmb_gender">
+                        <li><a class="dropdown-item" href="#">Male</a></li>
+                        <li><a class="dropdown-item" href="#">Female</a></li>
+                    </ul><br>
+                </div><br>                
+                <br>
+                <br>
+                <input type="button" value="Submit" class="btn btn-success col-md-12" onclick="submit_data()"><br><br>
+                <input type="reset" value="Clear" class="btn btn-danger col-md-12" onclick="erase_data()">   
+            </div>         
+            <br><br>
+        </form>
+    </div>        
+</body>
+</html>
