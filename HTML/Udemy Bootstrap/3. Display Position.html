@@ -8,7 +8,73 @@
 </head>
 <body>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- All Display classes start with d- -->
 
+    <div class="container">
+
+        <h1 class="mb-5">Display and Position</h1>
+
+        <!-- Display None -->
+        <p class="d-none">This text is hidden</p>
+
+        <!-- Display Inline: Span, Image, or Link that will on the same line
+             Spans are, by default in-line, so you can't set the gaps between the lines
+        -->
+        <p class="d-inline">This is an in-line text - First</p>
+        <p class="d-inline">This is an in-line text - Secoond</p>
+
+
+        <!-- Block Level refers to a div or a paragraph that is on top of each other -->
+        <span class="d-block">This is a block text</span>
+        <span class="d-block">This is a span (meaning it should be in-line), but I am applying the block class, which will move it below</span>
+
+        <!-- This one will display the text-inline, but will also have a width -->
+        <span class="d-inline-block" style = "width: 500px">This is an inline-block text, which will switch the text to inline when width is greater than the parameter provided</span>
+        <span class="d-inline-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+
+        <!-- Responsive Texts -->
+        <!-- This text will be hidden on mobile 
+             If you have a lot of text that looks good on the desktop, but if you view it on a mobile device, it looks cramped
+             In such a situation, setting the class first to d-none will hide the text, when the screen size is below a certain threshold
+        -->
+
+        <div class="d-none d-md-block">This text won't show up on mobile screens</div>
+
+
+        <!-- When you want to hide the text when it is viewed on larger screens and only show when it is viewed on smaller screens 
+             You can apply d-block to show the text as a blockquote, but then hide it when the screen size is big
+        -->
+
+        <div class="d-block d-md-none">This div is hidden on a larger screen</div>
+
+        <!-- Position Classes -->
+        <!-- Position Static It won't change anything -->
+
+        <p class="position-static">This is a static text.</p>
+
+        <!-- Position Relative: Suppose we want to position a text inside a square, relative to the size and dimensions of the square -->
+        <div class = "position-relative" style = "height: 200px; width: 200 px; background: #ccc;">
+            <p class="position-absolute end-0 bottom-0">Hello World!</p>
+        </div>
+        <br>
+        <div class = "position-relative" style = "height: 200px; width: 200 px; background: #ccc;">
+            <p class="position-absolute center-0" style = "top: 90px">Hello World!</p>
+        </div>
+
+        <!-- Position Fixed (Relative to the ViewPort) 
+             This text will remain at the same place, regardless of where the user is while scrolling
+        -->
+        <p class="position-fixed">This text is fixed</p>
+
+        <!-- This will fix the text at the top of the ViewPort -->
+        <p class="fixed-top">This text will stick to the top</p>
+
+        <!-- This will fix the text at the bottom of the ViewPort -->
+        <p class="fixed-bottom">This text will stick to the bottom</p>
+    </div>
+
+    <!-- Don't go past here -->
+    <div style = "margin-top: 350px"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
